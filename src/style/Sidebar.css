@@ -1,0 +1,50 @@
+.sidebar {
+  width: 25vw;
+  padding: 16px;
+  overflow: auto;
+  color: rgb(119, 119, 119);
+  background: linear-gradient(
+    rgb(249, 248, 247),
+    rgb(251, 250, 248) 46px,
+    rgb(251, 251, 249) 120px,
+    rgb(248, 247, 245) 35%,
+    rgb(249, 248, 246)
+  );
+}
+
+.sidebar__proudly-created {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding: 16px;
+  left: 0;
+}
+
+.sidebar__browse-and-share {
+  display: flex;
+  margin-top: 16px;
+  row-gap: 16px;
+  flex-direction: column;
+}
+
+.sidebar__link-and-copy {
+  display: flex;
+  flex-direction: row;
+  align-self: space-between;
+  justify-content: space-between;
+  row-gap: 0px;
+}
+
+.sidebar__comment-list {
+  list-style: none;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  padding: 0;
+}
+
+.sidebar__comment {
+  cursor: pointer;
+  transition: background 140ms ease-in;
+}
