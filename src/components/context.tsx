@@ -19,7 +19,7 @@ export const HighlightContext = createContext<highlightContextType>(
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const HighlightContextProvider = (props: any) => {
   const [highlights, setHighlights] = useState(
-    JSON.parse(localStorage.getItem("list") as string) as IHighlight[]
+    (JSON.parse(localStorage.getItem("list") as string) as IHighlight[]) || []
   );
   const [isHighlightSelected, setIsHighlightSelected] = useState(false);
   const [sidebarStatus, setSidebarStatus] = useState<SidebarStatus>(

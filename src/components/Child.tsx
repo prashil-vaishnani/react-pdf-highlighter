@@ -16,8 +16,9 @@ const Child = ({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   pdfDocument: any;
 }) => {
-  const { sidebarStatus, highlights,handleHighlightSelection } = useContext(HighlightContext);
-
+  const { sidebarStatus, highlights, handleHighlightSelection } =
+    useContext(HighlightContext);
+  console.log(highlights, "jkljk;jkl");
   return (
     <div
       style={{
